@@ -81,3 +81,30 @@
   justify-content: center;
   padding-top: 3px;
 }
+
+
+.form-container {
+    margin-top: 100px;
+  }
+
+  .button-area .btn {
+    border-radius: 20px !important;
+  }
+
+  .button-area .btn:hover {
+    border-radius: 20px !important;
+  }
+
+  .button-area .btn-primary {
+    background-color: #FF4000;
+    border-color: #FF4000;
+  }
+
+  .button-area .btn-primary:hover {
+    background-color: #d13e0d;
+    border-color: #d13e0d;
+  }
+
+  body {
+    background-color: rgb(235, 235, 235);
+  }
