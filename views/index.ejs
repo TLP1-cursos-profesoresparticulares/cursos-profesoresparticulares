@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="/css/landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -79,83 +79,7 @@
 
     <main>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="col-2">
-                    <img src="./img/icon.png" width="60px">
-                    <a href="./index.html" class="text-decoration-none text-dark ">
-                        <strong class="align-content-lg-center">educARse</strong></a>
-                </div>
-
-
-                <div class="dropdown" id="mas-dropdown-navbar">
-                    <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <strong>MÁS</strong>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
-                        <li><a class="dropdown-item" href="#">Explorar</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                    </ul>
-                </div>
-
-
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <form class="d-flex" id="search-container">
-                        <div class="input-wrapper">
-                            <input type="search" class="input" placeholder="Search">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
-                                fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                    </form>
-
-
-                    <div class="dropdown" id="mas-dropdown">
-                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>MÁS</strong>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
-                            <li><a class="dropdown-item" href="#">Explorar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="button-area">
-                        <a href="./login.html" class="btn btn-secondary">Inicar sesion</a>
-                        <a href="./registro.html" class="btn btn-primary">Registrate</a>
-                    </div>
-
-                </div>
-            </div>
-        </nav>
+<%- include('partials/navbar') %>
 
         <div class="container-fluid main mb-5">
 
@@ -335,47 +259,7 @@
 
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>Nosotros</h6>
-                    <p class="text-justify">Somos <i>ESTUDIANTES</i> del Instituto Politecnico Formosa que cursan el
-                        primer año de la tecnicatura en DESARROLLO DE SOFTWARE MULTIPLATAFORMA</p>
-                </div>
-
-
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>LINKS</h6>
-                    <ul class="footer-links">
-                        <li><a href="">Contactactanos</a></li>
-                        <li><a href="">Contribuciones</a></li>
-                        <li><a href="">Politicas de privacidad</a></li>
-                        <li><a href="">Ubicacion</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2023 todos los derechos estan reservados.
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fab fa-facebook text-white"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fab fa-twitter text-white"></i></a></li>
-                        <li><a class="github" href="#"><i class="fab fa-github text-white"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin text-white"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<%- include('partials/footer') %>
 
 
     <script script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
