@@ -5,48 +5,12 @@ const User = sequelize.define('users',{
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
-},
-  name: {
-      type: DataTypes.STRING,
-      allowNull: false
   },
-  surname: {
-    type: DataTypes.STRING,
-    allowNull: false
-},
-  email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: {
-          args: true,
-          messge: 'El email ya existe'
-      },
-  },
-  password: {
-      type: DataTypes.STRING,
-      allowNull: false
-  },
-  createdAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
-  },
-  updatedAt: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
-  },
-  deletedAt: {
-      type: DataTypes.DATE,
-      allowNull: true
-  }
-}, {
-  // Other model options go here
-  createdAt: true,
-  updatedAt: true,
-  deletedAt: true,
-  tableName: 'user'
+  name: { type: DataTypes.STRING},
+  surname: { type: DataTypes.STRING},
+  email: { type: DataTypes.STRING},
+  password: { type: DataTypes.STRING},
 });
 
-User.sync()
+
 module.exports = User;

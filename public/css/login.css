@@ -38,7 +38,7 @@
 
 
 #search-container input {
-    width: 600px;
+    width: 100%;
     border-radius: 0;
     border-bottom: 0px rgb(161, 161, 161) solid;
     border-top: none;
