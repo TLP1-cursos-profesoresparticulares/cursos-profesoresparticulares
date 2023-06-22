@@ -55,7 +55,7 @@
                     <strong>MÁS</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
-                    <li><a class="dropdown-item" href="#">Explorar</a></li>
+                    <li><a class="dropdown-item" href="/explorar">Explorar</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -88,7 +88,7 @@
 
     if(userData){
         if(userData.isLogged){
-            document.getElementById('body').innerHTML = `<p onClick="cerrarSesion()"">Hola ${userData.name}</p>`
+            document.getElementById('body').innerHTML = `<p onClick="cerrarSesion()"">Hola, ${userData.name} !</p>`
             console.log('logged');
         } 
     } else document.getElementById('body').innerHTML = `<div class="button-area">

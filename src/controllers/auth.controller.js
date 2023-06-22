@@ -11,6 +11,7 @@ userctrl.register = async (req, res) => {
             surname,
             email,
             password,
+            typeUserId
         });
     
     const userCreate = await newUser.save();

@@ -10,7 +10,7 @@ const registrarUsuario = async ()=>{
     let typeUserId = '';
   
     if(!policyCheck){
-        return alert('Debes aceptar las poltiicas antes de registrarte')
+        return alert('Debes aceptar las politicas antes de registrarte')
     }
 
     if(password !== confirmPassword){

@@ -12,4 +12,8 @@ router.get('/register',(_req, res) => {
     res.render('registro');
 });
 
+router.get('/explorer',(_req, res) => {
+    res.render('explorar');
+});
+
 module.exports = router;
